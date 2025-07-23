@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple travel blog using HTML5">
+    <title>Travel Blog</title>
+    <style>
+        html, body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url('./images/bg.jpg'); /* Using relative path */
+            background-color: #f0f0f0; /* Fallback color */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            backdrop-filter: blur(5px);
+        }
+        
+        th, td {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #000;
+        }
+        
+        th {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        tr:hover td {
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>✈️ My Travel Blog - Dhanya URK23CS9005</h1>
+        <p> All the guidance you needed from my blog.... </p>
+        <nav>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Paris">Top Places</a></li>
+                <li><a href="https://www.worldtrips.com/resources/travel-tips-for-beginners">Travel Tips</a></li>
+                <li><a href="https://www.thrillophilia.com/places-to-visit-in-france">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>Hello fellow traveler! 🌍 This is my personal blog where I share amazing travel experiences, helpful tips, and beautiful photos from around the world.</p>
+            <table>
+                <tr>
+                  <th>country</th>
+                  <th>place</th>
+                </tr>
+                <tr>
+                  <td>paris</td>
+                  <td>Eiffel Tower</td>
+                </tr>
+                <tr>
+                  <td>Kyoto</td>
+                  <td>Peaceful gardens</td>
+                </tr>
+                <tr>
+                  <td>Cape Town</td>
+                  <td>Sunny beach </td>
+                </tr>
+              </table>
+        <section id="places">
+            <h2>Top 3 Travel Destinations</h2>
+            <ol>
+                <li> Paris, France</li>
+                <li> Kyoto, Japan</li>
+                <li> Cape Town, South Africa</li>
+            </ol>
+        </section>
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <ul>
+                <li>✅ Pack light but don't forget essentials.</li>
+                <li>🔋 Always carry a power bank and adapter.</li>
+                <li>🧾 Keep digital copies of important documents.</li>
+            </ul>
+        </section>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <figure>
+                <img src="./images/paris.jpg" alt="Paris View" style="max-width: 100%; height: auto;">
+                <figcaption>Beautiful Eiffel Tower in Paris</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/kyoto.jpg" alt="Kyoto View" style="max-width: 100%; height: auto;">
+                <figcaption>Peaceful gardens of Kyoto</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/capetown.jpg" alt="Cape Town View" style="max-width: 100%; height: auto;">
+                <figcaption>Sunny beach in Cape Town</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>My Travel Blog | Designed with ❤️ using HTML5</p>
+    </footer>
+</body>
+</html>
